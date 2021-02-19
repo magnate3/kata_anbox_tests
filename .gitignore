@@ -1,0 +1,5 @@
+ginkgo
+!/**/ginkgo
+/cmd/log-parser/kata-log-parser
+functional/vfio/config.json
+kata-webhook/vendor

@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2019 Intel Corporation
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# We need to skip some docker integration tests as they are not
+# running correctly using Firecracker. We will skip them using
+# the ginkgo flag 'skip=REGEXP'.
+test:
+  - docker
+docker:
+  Describe:
+  Context:
+    - check yum update
+    - check dnf update
+  It:
